@@ -15,4 +15,8 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('dashboard');
-});
+})->name('dashboard');
+
+Route::get('/roles/index', function () {
+    return view('roles.index');
+})->name('roles.index');
